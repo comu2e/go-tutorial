@@ -51,9 +51,33 @@ func main() {
 	}
 
 	fmt.Println(multiple_by_3(20));
+
+	var s Student
+	s.name = "takashi"
+	s.math = 80
+	s.english = 90
+	fmt.Println(s)
+	s2 := Student{"kato",90,20}
+	fmt.Println(s2)
+	var u User
+	u.age = 20
+	u.gender = "man"
+	fmt.Println(u)
 }
 
 func multiple_by_3(i int) int {
 	fmt.Println("掛け算");
 	return (i*3)
+}
+
+//構造体
+type Student struct {
+	name string
+	math float64
+	english float64
+}
+
+type User struct{
+	gender string
+	age int
 }
