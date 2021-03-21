@@ -49,4 +49,11 @@ func main() {
 		}
 		j++;
 	}
+
+	fmt.Println(multiple_by_3(20));
+}
+
+func multiple_by_3(i int) int {
+	fmt.Println("掛け算");
+	return (i*3)
 }
